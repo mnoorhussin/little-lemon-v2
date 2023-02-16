@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+.navbar-nav .nav-link {
+  color: #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.hero {
+  background-image: url('./restaurant.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  padding-left: 10px;
+
+}
+.display-3{
+  color: #C3A510;
+  text-align: left;
+
+
+}
+.bg-dark{
+  padding-right: 0;
+
+
+} {
+  padding: 0;
+
+
+}
+.display-2{
+  color: #fff;
+  text-align: left;
+
+}
+.lead{
+  color: #000;
+  text-align: left;
+
+}
+.hero-btn{
+  background-color: #F4CE14;
+  text-align: left;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
