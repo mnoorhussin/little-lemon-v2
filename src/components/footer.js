@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
       <Container>
         <Row>
-          <Col md={4} className="footer-col">
+          <Col md={4} className="footer-links">
             <h5>Menu</h5>
             <Nav className="flex-column">
               <Nav.Link href="#">Appetizers</Nav.Link>
@@ -19,14 +19,14 @@ const Footer = () => {
           <Col md={4} className="footer-col">
             <h5>Contact Us</h5>
             <p>
-              123 Main Street, Anytown, USA
+              123 Main Street, Lausanne, Switzerland
               <br />
               Phone: (555) 555-5555
               <br />
               Email: info@littlelemonrestaurant.com
             </p>
           </Col>
-          <Col md={4} className="footer-col">
+          <Col md={4} className="social-links">
             <h5>Follow Us</h5>
             <Nav className="flex-column">
               <Nav.Link href="#">

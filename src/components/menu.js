@@ -1,55 +1,38 @@
 import React from "react";
 import '../App.css';
 
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card} from "react-bootstrap";
 
 
 const Menu = () => {
   return (
-    <Container fluid className="my-5" id="menu">
+    <Container fluid className="my-5 container" id="menu">
       <Row>
-      <Col md={1}>
-        </Col>
-        <Col md={8}>
-          <h2 className="font-weight-bold">Our Specialties</h2>
-        </Col>
-        <Col md={3} className="d-flex align-items-end">
-          <Button variant="secondary">Online Menu</Button>
-        </Col>
-      </Row>
-      <Row className="mt-5">
-        <Col md={3}>
-        </Col>
-        <Col md={2} className="card-equal-height">
+        <Col md={4} className="pb-sm-3">
           <Card>
-            <Card.Img variant="top" src= {process.env.PUBLIC_URL + '/images/dish1.jpg'} alt="Hero Image"/>
-            <Card.Body>
-              <Card.Title>Special Dish 1</Card.Title>
-              <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-				Nullam auctor lectus vel gravida consectetur. Aenean malesuada placerat blandit.</Card.Text>
+            <Card.Img variant="top" src= {process.env.PUBLIC_URL + '/images/dish1.jpg'} alt="Menu Image"/><Card.Body>
+              <Card.Title className="display-5">Spicy Garlic Noodles</Card.Title>
+              <Card.Text className="lead">Spicy garlic noodles are a popular Chinese-inspired dish that combines thick, chewy noodles with a flavorful sauce made from garlic, soy sauce, and chili paste. The dish is typically served with a variety of toppings,is of.</Card.Text>
             </Card.Body>
           </Card>
         </Col>
-        <Col md={2}>
+        <Col md={4} className="pb-sm-3">
           <Card>
-		  <Card.Img variant="top" src= {process.env.PUBLIC_URL + '/images/dish2.jpg'} alt="Hero Image" />            <Card.Body>
-              <Card.Title>Special Dish 2</Card.Title>
-              <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				 Nullam auctor lectus vel gravida consectetur. Aenean malesuada placerat blandit.</Card.Text>
+		  <Card.Img variant="top" src= {process.env.PUBLIC_URL + '/images/dish2.jpg'} alt="Menu Image" /><Card.Body>
+              <Card.Title className="display-5">Lemon Garlic Chicken</Card.Title>
+              <Card.Text className="lead">Tender chicken breasts marinated in a zesty lemon garlic sauce and grilled to perfection. Served with a side of roasted vegetables and garlic mashed potatoes. A satisfying and flavorful dish that's perfect for a hearty meal.</Card.Text>
+            </Card.Body>
+          </Card >
+        </Col>
+        <Col md={4} className="pb-sm-3">
+          <Card>
+		  <Card.Img variant="top" src= {process.env.PUBLIC_URL + '/images/dish3.jpg'} alt="Menu Image"/><Card.Body>
+              <Card.Title className="display-5">Mac and Cheese Deluxe</Card.Title>
+              <Card.Text className="lead">A classic American dish made with elbow macaroni and a rich and creamy cheese sauce. Our deluxe version is made with a blend of cheddar, mozzarella, and parmesan cheeses, and topped with a golden breadcrumb crust for added .</Card.Text>
             </Card.Body>
           </Card>
         </Col>
-        <Col md={2}>
-          <Card>
-		  <Card.Img variant="top" src= {process.env.PUBLIC_URL + '/images/dish3.jpg'} alt="Hero Image" className="card-equal-height"/>            <Card.Body>
-              <Card.Title>Special Dish 3</Card.Title>
-              <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				 Nullam auctor lectus vel gravida consectetur. Aenean malesuada placerat blandit.</Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
-        </Col>
+
       </Row>
     </Container>
   );

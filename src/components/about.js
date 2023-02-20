@@ -9,15 +9,11 @@ function About() {
 			<Container>
 				<Row>
 					<Col md={6}>
-						<h2>About Us</h2>
+						<h2 className='display-4'>About Us</h2>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at
-							nisi eget lacus cursus pharetra vel quis odio. Pellentesque nec
-							nulla massa. Vestibulum id malesuada metus, sed facilisis velit.
-							Sed aliquam justo nec arcu consectetur scelerisque. Nullam ut
-							accumsan quam. Morbi non tincidunt purus. Donec interdum eros ut
-							justo eleifend, quis vehicula ex efficitur. Praesent vel bibendum
-							nulla. Duis dictum tempus magna, nec commodo enim malesuada eget.
+						At Little Lemon, we pride ourselves on our attentive and friendly service, ensuring that every guest feels at home. Our menu offers a
+						 diverse range of dishes, from hearty entrees to light and refreshing salads, all expertly prepared by our talented chefs.
+						 Come dine with us and discover why Little Lemon has become a beloved neighborhood gem for both locals and visitors alike.
 						</p>
 					</Col>
 					<Col md={6}>
