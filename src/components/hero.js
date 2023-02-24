@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Button } from 'react-bootstrap';
 import '../App.css';
+import { NavLink } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -17,7 +18,7 @@ const Hero = () => {
               delicious, fresh, and locally-sourced cuisine in a warm and inviting
               atmosphere. With a focus on seasonal ingredients and classic cooking
               techniques,Little Lemon offers a delightful dining experience for all taste buds.</p>
-            <Button className="btn btn-warning btn-lg ">Reserve a Table</Button>
+              <NavLink to="/reservations"><Button className="btn btn-warning btn-lg">Reserve a Table</Button></NavLink>
           </Col>
         </Row>
       </div>

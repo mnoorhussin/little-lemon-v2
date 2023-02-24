@@ -5,8 +5,8 @@ import { Container, Row, Col} from 'react-bootstrap';
 
 function About() {
 	return (
-		<section className="about-section" id='about'>
-			<Container>
+		<section className="about-section bg-warning" id='about'>
+			<Container className=" py-5">
 				<Row>
 					<Col md={6}>
 						<h2 className='display-4'>About Us</h2>

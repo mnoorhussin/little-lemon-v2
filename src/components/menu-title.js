@@ -1,5 +1,6 @@
 import React from "react";
 import '../App.css';
+import MenuPDF from "../assets/Little Lemon Restaurant Menu.pdf";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 
@@ -11,7 +12,7 @@ const Menu = () => {
       <h2 className='display-4'>Our Specialties</h2>
     </Col>
     <Col sm={4} className="d-flex justify-content-end">
-      <Button variant="secondary">Online Menu</Button>
+    <Button href={MenuPDF} target="_blank" rel="noreferrer" className="btn btn-warning btn-lg ">Online Menu</Button>
     </Col>
   </Row>
 </Container>

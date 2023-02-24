@@ -1,41 +1,53 @@
+import salad from "./greek-salad.jpg";
+import bruschetta from "./restauranfood.jpg";
+import dessert from "./lemon-dessert.jpg";
 import React from "react";
-import '../App.css';
-
-import { Container, Row, Col, Card} from "react-bootstrap";
 
 
-const Menu = () => {
+const Specials = () => {
+
   return (
-    <Container fluid className="my-5 container" id="menu">
-      <Row>
-        <Col md={4} className="pb-sm-3">
-          <Card>
-            <Card.Img variant="top" src= {process.env.PUBLIC_URL + '/images/dish1.jpg'} alt="Menu Image"/><Card.Body>
-              <Card.Title className="display-5">Spicy Garlic Noodles</Card.Title>
-              <Card.Text className="lead">Spicy garlic noodles are a popular Chinese-inspired dish that combines thick, chewy noodles with a flavorful sauce made from garlic, soy sauce, and chili paste. The dish is typically served with a variety of toppings,is of.</Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4} className="pb-sm-3">
-          <Card>
-		  <Card.Img variant="top" src= {process.env.PUBLIC_URL + '/images/dish2.jpg'} alt="Menu Image" /><Card.Body>
-              <Card.Title className="display-5">Lemon Garlic Chicken</Card.Title>
-              <Card.Text className="lead">Tender chicken breasts marinated in a zesty lemon garlic sauce and grilled to perfection. Served with a side of roasted vegetables and garlic mashed potatoes. A satisfying and flavorful dish that's perfect for a hearty meal.</Card.Text>
-            </Card.Body>
-          </Card >
-        </Col>
-        <Col md={4} className="pb-sm-3">
-          <Card>
-		  <Card.Img variant="top" src= {process.env.PUBLIC_URL + '/images/dish3.jpg'} alt="Menu Image"/><Card.Body>
-              <Card.Title className="display-5">Mac and Cheese Deluxe</Card.Title>
-              <Card.Text className="lead">A classic American dish made with elbow macaroni and a rich and creamy cheese sauce. Our deluxe version is made with a blend of cheddar, mozzarella, and parmesan cheeses, and topped with a golden breadcrumb crust for added .</Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+    <section id="menu" class="bg-light py-5">
+      <div class="container">
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src={salad} alt="salad"></img>
+                <div class="card-body">
+                  <h5 class="card-title">Greek Salad</h5>
+                  <p class="card-text">Classic Greek Salad, featuring tomatoes, cucumbers, red onions, olives, feta cheese, and dressed with a red wine vinaigrette.</p>
+                  <h6 class="card-subtitle mb-2">$8.99</h6>
+                  <button class="btn btn-warning ">Order</button>
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src={bruschetta} alt="Bruschetta"></img>
+                <div class="card-body">
+                  <h5 class="card-title">Bruschetta</h5>
+                  <p class="card-text">Crispy toasted bread topped with tomatoes, fresh basil, and mozzarella cheese, drizzled with a balsamic glaze.</p>
+                  <h6 class="card-subtitle mb-2">$9.99</h6>
+                  <button class="btn btn-warning ">Order</button>
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src={dessert} class="card-img-top" alt="Lemon Dessert"></img>
+                <div class="card-body">
+                  <h5 class="card-title">Lemon Dessert</h5>
+                  <p class="card-text">Moist and tangy lemon cake, topped with a zesty lemon frosting for a burst of flavor in every bite.</p>
+                  <h6 class="card-subtitle mb-2">$6.99</h6>
+                  <button class="btn btn-warning ">Order</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      </Row>
-    </Container>
   );
 };
-
-export default Menu;
+export default Specials;

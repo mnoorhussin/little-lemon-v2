@@ -1,38 +1,18 @@
 import React from "react";
-import Navbar from "./components/navbar";
-import About from "./components/about";
-import Hero from "./components/hero";
-import Testimonials from "./components/testimonials";
-import Menu from "./components/menu";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Signup from "./components/signup";
-import Footer from "./components/footer"
-import MenuTitle from "./components/menu-title"
-import BookingPage from "./components/BookingPage"
+import Homepage from "./routes/Homepage";
+import Reservations from "./routes/Reservations";
 
-
-
+import {Route, Routes} from "react-router-dom";
 
 function App() {
   return (
-
     <>
-      <Navbar />
-      <Hero />
-      <MenuTitle />
-      <Menu />
-      <About />
-      <Testimonials />
-      <Signup />
-      <Footer />
-      <BookingPage />
-
+      <Routes>
+        <Route path = "/" element = {<Homepage />}/>
+        <Route path = "/reservations" element = {<Reservations />}/>
+      </Routes>
     </>
-
-
   );
-
-
 }
 
 export default App;
