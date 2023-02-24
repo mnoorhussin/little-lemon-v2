@@ -3,6 +3,9 @@ import { Container, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup";
+import { useNavigate } from 'react-router-dom';
+
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const schema = yup.object({
@@ -20,10 +23,11 @@ function Form() {
         resolver: yupResolver(schema)
     })
 
-    console.log(errors)
-
+    const navigate = useNavigate();
+    
     const formSubmit = (data) => {
-        console.table(data)
+        console.table(data);
+        navigate('/ConfirmedBooking');
     }
 
     return (
