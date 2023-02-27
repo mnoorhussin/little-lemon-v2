@@ -16,8 +16,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
             className="logo"
           />
         </Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="custom-navbar-nav" />
+        <Navbar.Collapse id="custom-navbar-nav">
           <Nav className="d-flex ms-auto">
             <Nav className="ms-auto nav-items">
               <Nav.Link className="nav-item" href="#menu">
